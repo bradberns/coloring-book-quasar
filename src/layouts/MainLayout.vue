@@ -2,46 +2,37 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-
-        <q-toolbar-title>
-          Quasar App
+        <q-btn flat dense label="More" aria-label="Menu" @click="toggleLeftDrawer" />
+        <!-- <q-avatar>
+          <img src="https://res.cloudinary.com/dxbedpcbe/image/upload/v1734036932/piclumen-1733444559356_ypdjfy.png"
+            font-size="52px" size="300">
+        </q-avatar> -->
+        <q-toolbar-title class="text-center">
+          Brad's Beauties
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>v2.1.0</div>
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-    >
+    <q-drawer v-model="leftDrawerOpen" bordered>
       <q-list>
-        <q-item-label
-          header
-        >
-          Essential Links
+        <q-item-label header class="bg-grey-8 text-center text-white text-bold">
+          Other Projects
         </q-item-label>
 
-        <EssentialLink
-          v-for="link in linksList"
-          :key="link.title"
-          v-bind="link"
-        />
+        <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" />
       </q-list>
     </q-drawer>
 
     <q-page-container>
       <router-view />
     </q-page-container>
+    <q-footer elevated class="bg-primary text-white">
+      <div class="text-h5 text-center q-my-sm">
+        Copyright 2024
+      </div>
+    </q-footer>
   </q-layout>
 </template>
 
@@ -51,52 +42,52 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
+    title: 'Brad Berns',
+    caption: 'personal website',
+    icon: '',
+    link: 'https://bradberns.netlify.app/'
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    title: 'Onlyfans',
+    caption: 'adult videos',
+    icon: '',
+    link: 'https://onlyfans.com/bradberns'
   },
   {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
+    title: 'ManyVids',
+    caption: 'adult videos',
+    icon: '',
     link: 'https://chat.quasar.dev'
   },
   {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
+    title: 'LoyalFans',
+    caption: 'adut videos',
+    icon: '',
+    link: 'https://www.loyalfans.com/bradbernsxxx'
   },
   {
     title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
+    caption: '@BradBernsxx',
+    icon: '',
+    link: 'https://x.com/BradBernsXX'
   },
   {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
+    title: 'Reddit',
+    caption: '@BradBerns',
+    icon: '',
+    link: 'https://reddit.com'
   },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
+  // {
+  //   title: 'Quasar Awesome',
+  //   caption: 'Community Quasar projects',
+  //   icon: 'favorite',
+  //   link: 'https://awesome.quasar.dev'
+  // }
 ]
 
 const leftDrawerOpen = ref(false)
 
-function toggleLeftDrawer () {
+function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
 </script>
