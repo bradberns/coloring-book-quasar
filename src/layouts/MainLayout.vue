@@ -73,9 +73,9 @@ const linksList = [
   },
   {
     title: 'Reddit',
-    caption: '@BradBerns',
+    caption: 'Brad Bernsxxx',
     icon: '',
-    link: 'https://reddit.com'
+    link: 'https://www.reddit.com/u/Bradbernsxxx'
   },
   // {
   //   title: 'Quasar Awesome',
