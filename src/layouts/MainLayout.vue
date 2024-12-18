@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn flat dense label="More" aria-label="Menu" @click="toggleLeftDrawer" />
+        <q-btn flat dense icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
         <!-- <q-avatar>
           <img src="https://res.cloudinary.com/dxbedpcbe/image/upload/v1734036932/piclumen-1733444559356_ypdjfy.png"
             font-size="52px" size="300">
@@ -49,19 +49,19 @@ const linksList = [
   },
   {
     title: 'Onlyfans',
-    caption: 'adult videos',
+    caption: 'onlyfans.com/bradberns',
     icon: '',
     link: 'https://onlyfans.com/bradberns'
   },
   {
     title: 'ManyVids',
-    caption: 'adult videos',
+    caption: 'BradBernsxxx.manyvids.com',
     icon: '',
-    link: 'https://chat.quasar.dev'
+    link: 'https://BradBernsxxx.manyvids.com'
   },
   {
     title: 'LoyalFans',
-    caption: 'adut videos',
+    caption: 'loyalfans.com/bradbernsxxx',
     icon: '',
     link: 'https://www.loyalfans.com/bradbernsxxx'
   },
