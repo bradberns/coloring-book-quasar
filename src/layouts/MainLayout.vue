@@ -3,19 +3,16 @@
     <q-header elevated>
       <q-toolbar>
         <q-btn flat dense icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
-        <!-- <q-avatar>
-          <img src="https://res.cloudinary.com/dxbedpcbe/image/upload/v1734036932/piclumen-1733444559356_ypdjfy.png"
-            font-size="52px" size="300">
-        </q-avatar> -->
+
         <q-toolbar-title class="text-center"> Brad's Beauties </q-toolbar-title>
 
-        <div>v2.2.0</div>
+        <q-badge outline rounded color="white" label="v2.2.0" />
       </q-toolbar>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" bordered>
       <q-list>
-        <q-item-label header class="bg-accent text-center text-white text-bold">
+        <q-item-label header class="bg-[#9c27b0] text-center text-white text-bold">
           Other Projects
         </q-item-label>
 
