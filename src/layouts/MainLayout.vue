@@ -9,7 +9,7 @@
         </q-avatar> -->
         <q-toolbar-title class="text-center"> Brad's Beauties </q-toolbar-title>
 
-        <div>v2.1.0</div>
+        <div>v2.2.0</div>
       </q-toolbar>
     </q-header>
 
