@@ -8,7 +8,7 @@ const autoplay = ref(true);
 
 <template>
   <div class="q-mx-auto text-center q-my-sm">
-    <q-btn label="Coloring Book 2 - Samples" size="12px" outline color="accent" @click="alert = true" />
+    <q-btn label="Coloring Book 2 - Samples" size="12px" outline color="primary" @click="alert = true" />
   </div>
   <q-dialog v-model="alert">
     <q-card class="w-full">

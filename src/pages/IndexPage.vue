@@ -1,18 +1,29 @@
 <script setup>
+import { ref } from "vue";
 //import ContactComponent from "src/components/ContactComponent.vue";
 import SamplesOne from "src/components/SamplesOne.vue";
 import SamplesTwo from "src/components/SamplesTwo.vue";
 import SamplesThree from "src/components/SamplesThree.vue";
 //
+
+const showing = ref(true);
+
+setTimeout(() => {
+  showing.value = false;
+}, 1500);
 </script>
 
 <template>
   <q-page>
     <div class="my-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <div id="img" class="mx-auto w-full p-2 lg:p-0 bg-gray-200 md:bg-gray-50">
-        <img alt="Brad BernsXXX" class="mx-auto p-1 rounded-xl"
-          src="https://res.cloudinary.com/dxbedpcbe/image/upload/v1732139973/brad_berns-2_pywfds.png" width="300"
-          height="300" />
+        <q-card>
+          <img alt="Brad BernsXXX" class="mx-auto p-1 rounded-xl"
+            src="https://res.cloudinary.com/dxbedpcbe/image/upload/v1732139973/brad_berns-2_pywfds.png" width="300"
+            height="300" />
+          <q-inner-loading :showing="showing" size="50px" color="primary" label="Please wait..."
+            label-class="text-primary" label-style="font-size: 2.1em" transition-show="scale" transition-hide="scale" />
+        </q-card>
       </div>
       <div id="intro" class="mx-auto">
         <div class="text-left px-2">
@@ -44,7 +55,7 @@ import SamplesThree from "src/components/SamplesThree.vue";
             </li>
           </ul>
         </div>
-        <div id="sample_btns" class="mt-4 text-center">
+        <div id="sample_btns" class="mt-5 text-center">
           <!-- <ContactComponent /> -->
           <SamplesOne />
           <SamplesTwo />
