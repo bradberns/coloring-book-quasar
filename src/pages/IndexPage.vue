@@ -28,37 +28,43 @@ setTimeout(() => {
       <div id="intro" class="mx-auto">
         <div class="text-left px-2">
           <h1 class="text-2xl text-center">Welcome to Brad's Beauties</h1>
-          <p class="mt-2 indent-1.5">
+          <p class="mt-2 indent-1.5 text-lg lg:text-base">
             Here you'll find AI created sketches of pretty women, perfect for coloring.
             Each zip file has over 20 images and each image is 1148 px (height) and 896 px
             (width). Feel free to download the complete zip files, or one of the samples
             below.
           </p>
-          <ul id="zip_files" class="text-blue-500 mt-2 text-sm">
-            <li class="">
-              <a class="hover:underline p-1"
+          <ul id="zip_files" class="mt-2 text-lg lg:text-base mx-24 lg:mx-0">
+            <li class="my-2">
+              <a class="hover:underline p-1 text-blue-500 font-medium"
                 href="https://www.dropbox.com/scl/fi/ngfsxizqnqo5ttpinwv91/coloringbook.zip?rlkey=i1s4u539vdzstatbpht1ldj7e&st=u16xtq3y&dl=0">
-                ColoringBook.zip | The Original
+                ColoringBook.zip
               </a>
+              <span class="font-light italic">(Original)</span>
             </li>
             <li class="my-2">
-              <a class="hover:underline p-1"
+              <a class="hover:underline p-1 text-blue-500 font-medium"
                 href="https://www.dropbox.com/scl/fi/2re8a7o4xz96gqgsi02fr/coloringbook-2.zip?rlkey=xbg1sa6d3xrryh0vhke1rhdb6&st=ikxq8c0j&dl=0">
-                ColoringBook-2.zip | nurses, cowgirls, and more
+                ColoringBook-2.zip
+                <br class="lg:hidden" />
               </a>
+              <span class="font-light italic">(nurses, cowgirls,...)</span>
             </li>
             <li class="my-2">
-              <a class="hover:underline p-1"
+              <a class="hover:underline p-1 text-blue-500 font-medium"
                 href="https://www.dropbox.com/scl/fi/7wabxlucfcqd10qf3zs0h/coloringbook-3.zip?rlkey=p0dgyxv4rs9w6siifcgfxrilg&st=wk39z7nq&dl=0">
-                ColoringBook-3.zip | various anime girls
+                ColoringBook-3.zip
+                <br class="lg:hidden" />
               </a>
+              <span class="font-light italic">(various anime girls)</span>
             </li>
           </ul>
         </div>
-        <div id="sample_btns" class="mt-5 text-center">
+        <div id="sample_btns" class="mt-3 text-center">
           <!-- <ContactComponent /> -->
           <SamplesOne />
           <SamplesTwo />
+
           <SamplesThree />
         </div>
       </div>
